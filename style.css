@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: boder-box;
+  box-sizing: border-box;
 }
 
 /* Body général */
@@ -13,6 +13,33 @@ body {
   line-height: 1.6;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
 /* Conteneur principal */
 .container {
   width: 90%;
@@ -20,3 +47,71 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
+
+section {
+  margin-bottom: 50px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #f7f9fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif; /* Pour qu'il suive le reste */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mise à jour pour déclencher GitHub linguist */
