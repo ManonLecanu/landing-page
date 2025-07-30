@@ -1,0 +1,22 @@
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boder-box;
+}
+
+/* Body général */
+body {
+  font-family: "segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
